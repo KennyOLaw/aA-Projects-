@@ -17,7 +17,7 @@ class PolyTreeNode
   end 
 
   def inspect
-    self.value
+    "Node value: #{self.value}"
   end 
 
   def add_child(child_node)
@@ -47,7 +47,6 @@ class PolyTreeNode
     queue = [self]
     until queue.empty?
       checked = queue.shift
-    #   debugger
       return checked if checked.value == target_value
       queue += checked.children
     end
