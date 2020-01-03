@@ -29,7 +29,6 @@ header > img {
 body {
   line-height: 1.5;
   font-family: "Arial, sans-serif";
-  background-color: lightblue;
 }
 h1 { 
   font-size: 38px;
@@ -45,14 +44,6 @@ ol, ul {
 }
 ol {
   list-style: "square inside";
-}
-ol > li > a {
-  color: inherit;
-  text-decoration: none;
-}
-#a_review {
-  font-size: bold;
-  color: blue;
 }
 blockquote, q {
   quotes: none;

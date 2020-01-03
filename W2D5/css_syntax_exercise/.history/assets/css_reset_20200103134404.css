@@ -50,10 +50,6 @@ ol > li > a {
   color: inherit;
   text-decoration: none;
 }
-#a_review {
-  font-size: bold;
-  color: blue;
-}
 blockquote, q {
   quotes: none;
 }
