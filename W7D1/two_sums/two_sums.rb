@@ -22,9 +22,9 @@ p bad_two_sum?(arr, 6) # => should be true
 p bad_two_sum?(arr, 10) # => should be false
 
 #time complexity O(nlog(n))
-#space complexity O(nlog(n))
+#space complexity O(n)
 def okay_two_sum?(arr, target_sum) #[2,4,10] 6
-    sorted_arr = arr.sort
+    sorted_arr = arr.sort 
     (0...sorted_arr.length - 1).each do |idx|
         return true if (sorted_arr[idx] + sorted_arr[idx + 1]) == target_sum
         # return false if sorted_arr[idx] > target_sum
