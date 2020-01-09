@@ -1,0 +1,47 @@
+div {
+  height: 200px;
+  width: 200px;
+}
+
+/* .box1 {
+  display: block;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 5px solid black;
+} */
+
+#first-div {
+  background-color: #39cccc;
+  display: block;
+  padding: 50px;
+  border: 5px solid black
+}
+
+#second-div {
+  background-color: #ff4136;
+  display: flex;
+  flex-grow: 1;
+  padding: 50px;
+  border: 5px solid black;
+}
+
+p {
+  background-color: #7fdbff;
+}
+img{
+  width: 100%;
+}
+#cat-image{
+  display: block;
+  height: 200px;
+  width: 600px;
+  background-color: blue;
+}
+#cat-image-2{
+  display: flex;
+  flex-grow: 1;
+  background-color: blue;
+}
+body{
+  background-color: blanchedalmond;
+}
