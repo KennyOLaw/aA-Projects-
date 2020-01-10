@@ -53,13 +53,13 @@ def largest_in_continent
       c1.name,
       c1.area
     FROM
-      countries c1
+      countries AS c1
     WHERE
       c1.area = (
         SELECT
           MAX(c2.area)
         FROM
-           countries c2
+           countries AS c2
         WHERE
           c1.continent = c2.continent
       );
@@ -74,16 +74,16 @@ def large_neighbors
       c1.name,
       c1.continent
     FROM
-      countries c1
+      countries AS c1
     WHERE
       population > 3 * (
         SELECT
           MAX(c2.population)
         FROM
-          countries c2
+          countries AS c2
         WHERE
-          c1.name != c2.name -- got me!
-            AND c1.continent = c2.continent
+          c1.name != c2.name AND 
+          c1.continent = c2.continent
       )
   SQL
 end
