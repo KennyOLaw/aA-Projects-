@@ -3,8 +3,8 @@ class User < ApplicationRecord
   
 
   has_many :visisted_urls
-    class_name: :Visit,
+    class_name: 'Visit',
     primary_key: :id,
     foreign_key: :user_id
-    
+
 end 

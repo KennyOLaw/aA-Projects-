@@ -6,12 +6,12 @@ class Visit < ApplicationRecord
   end
 
   belongs_to :user 
-    class_name: :User,
+    class_name: 'User',
     primary_key: :id,
     foreign_key: :user_id
 
     belongs_to :url
-      class_name: :ShortenedUrl,
+      class_name: 'ShortenedUrl',
       primary_key: :id,
       foreign_key: :url_id
   
