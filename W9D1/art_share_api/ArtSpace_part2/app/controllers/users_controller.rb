@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   def index
+    if params[:query]
+      users = User
     render json: User.all
   end 
   
