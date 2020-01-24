@@ -1,0 +1,35 @@
+<% if cats.persisted %>
+  <% action_method = cat_url(cats.id) %>
+  <% method_override = "<input type="hidden" name="_method" method="PATCH">".html_safe%>
+<% else %>
+  <% action_method = cats_url %>
+  <% method_override = "" %>
+<% end %>
+
+<form action="<%= action_method %>" method="POST"> 
+  <%= method_override %>
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="cat[name]" value="<%= cats.name %>" />
+  <br>
+  <label for="sex">Sex:</label>
+    <input id="sex" type="radio" name="cat[sex]" value="M" />
+      <label for="m">M</label>
+    <input id="sex" type="radio" name="cat[sex]" value="F" />
+      <label for="f">F</label>
+  <br>
+  <label for="color">Color:</label>
+    <select id="color" name="cat[color]">
+      <option disabled>Select Color</option>
+      <% cats.color_options.each do |color| %>
+        <option val="<%= color  %>">  <%= color %> </option>
+      <% end %>
+    </select>
+  <br>
+  <label for="birth_date">Birthdate:</label>
+    <input id="birth_date" type="date" name="cat[birth_date]" value="<%= cats.birth_date %>" />
+  <br>
+  <label for="description">Description:</label>
+    <textarea id="description" name="cat[description]" ><%= cats.description %></textarea>
+
+    <input type="submit" value="button_text">
+</form>
