@@ -1,0 +1,19 @@
+<section class="bands-index-holder">
+  <nav>
+    <h1>ALL OF THE BANDS IN THE WORLD</h1>
+    <a href="<%= new_band_url %>"> Add a Band!</a>
+  </nav>
+  <section class="band-index">
+    <% @bands.each do |band| %>
+      <div class="band-index-item">
+        <div>
+          <img src="https://store-images.s-microsoft.com/image/apps.18676.69332955897062199.e13143ee-35a2-4de0-829b-a69ffddcd17d.a292f2f1-0ce2-46be-b742-01b3a75e3bd5?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF">
+          <br /><a href="<%= band_url(band) %>"> <%= band.name %></a>
+        </div>
+      </div>
+    <% end %>
+  </section>
+</section>
+<% content_for :footer do %>
+  <p>List of all Band Enjoy!</p>
+<% end %>
