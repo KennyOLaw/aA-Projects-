@@ -1,18 +1,18 @@
-<h1>Sign up!</h1>
+<h1 class='page-header'>Sign up!</h1>
 
  <% render "shared/errors" %>
+
+<a class='button' href=<%= new_session_url %> >Go to sign-in</a>
 
 <form action="users_url" method="POST">
   <%= auth_token %>
   
   <label for="email">Username(email_address):</label>
-  <input type="text" name="user[email]"
-    id="email" value="<%= @user.email %>">
+  <input type="text" name="user[email]" id="email">
   <br>
 
   <label for="user_password">Password:</label>
-  <input type="password" name="user[password]"
-   id="user_password" value="<%= @user.password %>">
+  <input type="password" name="user[password]" id="user_password">
   <br>
 
   <input type="submit" value="Create Account!">
