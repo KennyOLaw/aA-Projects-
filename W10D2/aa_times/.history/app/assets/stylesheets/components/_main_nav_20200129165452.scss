@@ -1,0 +1,49 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  
+}
+
+.left-nav > ul,
+.right-nav > ul {   
+  display: flex;
+  align-items: center;
+  // 
+}
+
+
+.left-nav > ul > li {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  margin: auto;
+  margin-right: 60px;
+  // align-self: flex-end;  
+}
+
+.right-nav > ul > li {
+  margin: 2px;
+}
+
+.right-nav > ul > li:last-of-type {
+
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+  background-color: #acacac;
+
+}
+
+.left-nav span {
+
+}
+
+
+.right-nav i {
+
+}
+
+.main-nav li {
+  font-variant: small-caps;
+}

@@ -1,0 +1,20 @@
+.section-nav > ul {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.section-nav > ul > li {
+  margin-left: 1rem;
+  
+}
+
+.section-nav > ul > li:hover {
+  background-color: gray;
+  text-decoration: none;
+}
+
+.section-nav > ul > li:last-of-type:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}

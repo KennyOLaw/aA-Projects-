@@ -1,0 +1,20 @@
+current directory: /home/jbarreto/Documents/Projects/aA/03_Rails/aa_times_pair/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20200129-4540-rpm9n8.rb extconf.rb
+creating Makefile
+
+current directory: /home/jbarreto/Documents/Projects/aA/03_Rails/aa_times_pair/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+rm -f 
+rm -f debug_inspector.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/jbarreto/Documents/Projects/aA/03_Rails/aa_times_pair/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o debug_inspector.o -c debug_inspector.c
+rm -f debug_inspector.so
+gcc -shared -o debug_inspector.so debug_inspector.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld  -m64  -lruby  -lm   -lc
+
+current directory: /home/jbarreto/Documents/Projects/aA/03_Rails/aa_times_pair/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20200129-4540-t35yg7
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20200129-4540-t35yg7

@@ -1,0 +1,10 @@
+.section-nav > ul {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.section-nav > ul > li {
+  margin-left: 1rem;
+  background-color: white;
+}

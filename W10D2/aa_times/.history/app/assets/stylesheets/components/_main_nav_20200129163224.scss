@@ -1,0 +1,42 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between ;
+}
+
+.left-nav > ul,
+.right-nav > ul {   
+  display: flex;
+
+}
+
+.left-nav > ul > li {
+
+
+}
+
+.right-nav > ul > li {
+
+}
+
+.right-nav > ul > li:last-of-type {
+
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+  background-color: grey;
+
+}
+
+.left-nav span {
+
+}
+
+
+.right-nav i {
+
+}
+
+.main-nav li {
+  font-variant: small-caps;
+}
